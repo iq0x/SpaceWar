@@ -1,0 +1,85 @@
+body
+{
+	background-image: url("img/star.gif");
+	color: white;
+	text-align: center;
+
+}  
+#choose
+{
+	font-size: 3em;
+	font-weight: bold;
+	font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .1em;
+}
+
+.main
+{
+	width: 100%;
+	display: block;
+	
+}
+		
+#menu
+{
+	width: 1000px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+#blockA, #blockB, #blockC, #blockD
+{
+	float: left;
+	width: 200px;
+	margin: 10px;
+	text-align: center;
+	border: 15px solid white;
+}
+
+#blockA
+{
+	background-image: url("img/helmutBack.png")
+} 
+
+#blockB
+{
+	background-image: url("img/monkeyBack.png")
+}  
+
+#blockC
+{
+	background-image: url("img/alienBack.png")
+}
+
+#blockD
+{
+	background-color:green;
+} 
+
+#black
+{
+	background-color:black;
+	padding:10px;
+} 
+
+#characterNameDIV1, #characterNameDIV2, #characterNameDIV3, #characterNameDIV4
+{
+	text-align: center;
+	background-color: black;
+}
+
+#attribute
+{
+	font-weight: bold;
+}
+
+
+
+

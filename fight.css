@@ -1,0 +1,411 @@
+body
+{
+ height: 100%;
+    background-image: url(img/arctic.svg);
+    background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size:cover;
+	color: white;
+}  
+
+#main
+{
+}
+		
+#menu
+{
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	width: 120px;
+	height:550px;
+	background-color: blue;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 25px;
+	z-index:2;
+}
+		
+#life
+{
+	font-size:25px;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 170px;
+	height:30px;
+	background-color: green;
+	text-align: center;
+	border: 10px solid white;
+	border-radius: 15px;
+	font-weight: bold;
+	z-index:2;
+}
+		
+#mana
+{
+font-size:25px;
+	position: fixed;
+	top: 20px;
+	left: 250px;
+	width: 170px;
+	height:30px;
+	background-color: blue;
+	text-align: center;
+	border: 10px solid white;
+	border-radius: 15px;
+	font-weight: bold;
+	color: white;
+	z-index:2;
+}
+
+
+#enemyLife
+{
+font-size:25px;
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	width: 170px;
+	height:30px;
+	background-color: green;
+	text-align: center;
+	border: 10px solid white;
+	border-radius: 15px;
+	font-weight: bold;
+	z-index:2;
+}
+		
+#enemyMana
+{
+font-size:25px;
+	position: fixed;
+	top: 20px;
+	right: 200px;
+	width: 170px;
+	height:30px;
+	background-color: blue;
+	text-align: center;
+	border: 10px solid white;
+	border-radius: 15px;
+	font-weight: bold;
+	color: white;
+	z-index:2;
+}
+		
+#blockA, #blockB, #blockC, #blockD
+{
+	width: 75px;
+	height: 75px;
+}  
+
+#blockABackground, #blockBBackground, #blockCBackground , #blockDBackground
+{
+	width: 75px;
+	height: 75px;
+	margin: 10px;
+	text-align: center;
+	border: 10px solid white;
+	border-radius: 25px;
+	background-image: url("img/magicBox.gif");
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left:auto;
+	z-index:2;
+}  
+
+#magicNameDIV1, #magicNameDIV2, #magicNameDIV3, #itemName
+{
+	text-align: center;
+	background-repeat: no-repeat;
+	font-size:14px;
+}	
+		
+#output
+{
+	position: absolute;
+	top: 100px;
+	width: 200px;
+	height: 30px;
+	background-color:green;
+	margin: 10px;
+	text-align: center;
+}  
+		
+		
+#character
+{
+	background-image: url("img/helmut.gif");
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 300px;
+	bottom: 0;
+	width: 200px;
+	height:200px;
+	animation: shake 13.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: infinite;
+    transition: transform .9s;
+}  
+
+#characterEffect
+{
+	background-image: url("");
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 300px;
+	bottom: 0;
+	width: 400px;
+	height:400px;
+	z-index: 2;
+} 
+
+#characterBoom
+{
+	background-image: url("");
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 300px;
+	bottom: 0;
+	width: 400px;
+	height:400px;
+	z-index: 2;
+} 
+		
+#enemy
+{
+	background-image: url("img/bat.svg");
+	background-repeat: no-repeat;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+	width: 500px;
+	height:500px;
+	animation: shake 7.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: infinite;
+    transition: transform .3s;
+} 
+
+#console
+{
+	background-color: black;
+	position: fixed;
+	right: 40%;
+	top: 0;
+	width: 400px;
+	height:40px;
+} 
+
+#enemyBoom
+{
+	background-image: url("");
+	background-repeat: no-repeat;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+	width: 500px;
+	height:600px;
+	z-index: 3;
+} 
+
+#enemyEffect
+{
+	background-image: url("");
+	background-repeat: no-repeat;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+	width: 500px;
+	height:600px;
+	z-index: 2;
+} 
+
+
+
+#round {
+ 	top: 10%;
+	left: 30%;
+	position: fixed;
+	background-image: url("");
+	background-repeat: no-repeat;
+	padding: 50px;
+	width: 400px;
+	height: 200px;
+	margin: 0 auto;
+	z-index: 99;
+	
+
+}
+
+#floor {
+ 	bottom: 0;
+	position: fixed;
+	background-color:brown;
+	padding: 50px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	z-index:-1;
+}
+
+#snake {
+ 	bottom: 0;
+	position: fixed;
+	left: 50%;
+	padding: 25px;
+	width: 300px;
+	height: 100px;
+	background-image: url("img/snake.svg");
+	background-repeat: no-repeat;
+}
+
+#tree {
+ 	bottom: 0;
+	position: fixed;
+	left: 20%;
+	padding: 25px;
+	width: 350px;
+	height: 350px;
+	background-image: url("img/tree.svg");
+	background-repeat: no-repeat;
+	z-index:-2;
+}
+
+#tree1 {
+ 	bottom: 0;
+	position: fixed;
+	right: 10%;
+	padding: 25px;
+	width: 550px;
+	height: 550px;
+	background-image: url("img/tree.svg");
+	background-repeat: no-repeat;
+	z-index:-2;
+}
+
+#friend 
+{
+	left: 0px;
+	position: fixed;
+    background-image: url("img/thomas.png");
+	background-repeat: no-repeat;
+    width: 170px;
+    height: 180px;
+    cursor: url("img/aim.png"), pointer;
+    z-index:-3;
+}
+
+.centrum 
+{
+	height: 6px;
+	left: 0px;
+	position: fixed;
+	top: 20%;
+	width: 150px;
+	animation: fly_horizontal 80s ease-in-out 0s infinite;
+	z-index:-3;
+}
+
+.moveY 
+{
+	height: 550px;
+	position: fixed;
+	top: 20%;
+	width: 150px;
+	animation: rotate 26s linear 0s infinite;
+	z-index:-3;
+}
+                  
+#rocket 
+{
+    animation:linear;
+    animation-name: fly_vertical;
+    animation-duration: 160s;
+    backface-visibility: hidden;
+    animation-iteration-count: infinite;
+    position:absolute;
+    bottom:10%;
+    left:5%;
+    background-image: url("img/rocket.gif");
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 380px;
+    display:block;
+}
+
+
+#meteor2 
+{
+    position: absolute;
+    top:30%;
+    right: 70%;
+    width: 150px;
+    height: 150px;
+    background-image: url("img/meteor_m.gif");
+    background-repeat: no-repeat;
+}
+
+#meteor3 
+{
+    position: absolute;
+    top:10%;
+    right: 40%;
+    width: 320px;
+    height: 330px;
+    background-image: url("img/meteor_xl.gif");
+    background-repeat: no-repeat;
+}
+#meteor 
+{
+    position: absolute;
+    top:0%;
+    right: 10%;
+    width: 220px;
+    height: 230px;
+    background-image: url("img/meteor.gif");
+    background-repeat: no-repeat;
+    animation: shake1 13.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: infinite;
+    transition: transform .2s;
+    z-index:-2;
+}
+
+#meteor2 
+{
+    position: absolute;
+    top:30%;
+    right: 70%;
+    width: 150px;
+    height: 150px;
+    background-image: url("img/meteor_m.gif");
+    background-repeat: no-repeat;
+    z-index:-2;
+}
+
+#meteor3 
+{
+    position: fixed;
+    top:20%;
+    right: 40%;
+    width: 320px;
+    height: 330px;
+    background-image: url("img/meteor_xl.gif");
+    background-repeat: no-repeat;
+    z-index:-2;
+}
+
+
+
+#ufo 
+{
+    position: absolute;
+    top:10%;
+    width: 150px;
+    height: 80px;
+    background-image: url("img/ufo.gif");
+    background-repeat: no-repeat;
+    animation:linear infinite alternate;
+    animation-name: fly_horizontal;
+    animation-duration: 50s;
+}
+
